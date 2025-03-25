@@ -171,7 +171,7 @@ const sendAttendanceReport = async () => {
 };
 
 // Schedule the function to run at 7:10 PM daily
-cron.schedule("10 23 * * *", () => {
+cron.schedule("30 23 * * *", () => {
   console.log("Running scheduled attendance report at 7:10 PM...");
   sendAttendanceReport();
 });
