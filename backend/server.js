@@ -31,7 +31,8 @@ app.use(
 );
 
 // Serve uploaded images
-app.use("/uploads", express.static("uploads"));
+// app.use("/uploads", express.static("uploads"));
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // Load Face API Models
 const MODELS_PATH = path.join(__dirname, "./models");
